@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(font/Norse-Bold.otf);
+}
+
+#logo-text{
+    font-family: Norse-Bold;
+}
+
+#leafs-img{
+    height: 95vh;
+}
