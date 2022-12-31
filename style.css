@@ -2,11 +2,91 @@
     font-family: Norse-Bold;
     src: url(font/Norse-Bold.otf);
 }
-
-#logo-text{
-    font-family: Norse-Bold;
+body{
+    margin: 0;
+    padding: 0;
 }
 
-#leafs-img{
+#container {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    width: 95vw;
+    height: 95vh;
+    overflow: hidden;
+    margin: auto;
+    border: black 3px solid;
+}
+
+#img-container {
+    display: grid;
+    background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    height: 95vh;
+}
+
+#form-container {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+}
+
+#odin-wrap{
+    display: flex;
+    height: 90%;
+    align-self: center;
+    justify-content: center;
+}
+
+#background-wrap {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    grid-row-start: 3;
+}
+
+#credits {
+    position: relative;
+    grid-row-start: 6;
+}
+
+#credits > p {
+    position: absolute;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#credits > p > a:link,
+#credits > p > a:visited,
+#credits > p > a:hover,
+#credits > p > a:active {
+    color: white;
+}
+
+#odin-logo {
+    height: 100%;
+}
+
+#logo-text {
+    font-family: Norse-Bold;
+    color: white;
+    font-size: 100px;
+    font-weight: 500;
+    align-self: center;
+}
+
+#leafs-img {
     height: 95vh;
 }
